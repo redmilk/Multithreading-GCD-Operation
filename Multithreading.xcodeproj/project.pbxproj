@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79B2F37625D71C1D008FA434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37525D71C1D008FA434 /* AppDelegate.swift */; };
-		79B2F37825D71C1D008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
-		79B2F37F25D71C1E008FA434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F37E25D71C1E008FA434 /* Assets.xcassets */; };
-		79B2F38225D71C1E008FA434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */; };
+		79B2F39525D71EB1008FA434 /* AppDelegateGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */; };
+		79B2F39625D71EB1008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
+		79B2F39925D71EB1008FA434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */; };
+		79B2F39A25D71EB1008FA434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F37E25D71C1E008FA434 /* Assets.xcassets */; };
+		79B2F3A525D71EC4008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
+		79B2F3A825D71EC4008FA434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */; };
+		79B2F3A925D71EC4008FA434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F37E25D71C1E008FA434 /* Assets.xcassets */; };
+		79B2F3B425D71F22008FA434 /* GCD-Multithreading-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F39F25D71EB1008FA434 /* GCD-Multithreading-Info.plist */; };
+		79B2F3B525D71F25008FA434 /* Operation-Multithreading-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F3AE25D71EC4008FA434 /* Operation-Multithreading-Info.plist */; };
+		79B2F3BF25D7223F008FA434 /* GCD-Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3BE25D7223E008FA434 /* GCD-Features.swift */; };
+		79B2F3C325D7225B008FA434 /* Operation-Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3C225D7225B008FA434 /* Operation-Features.swift */; };
+		79B2F3CB25D72363008FA434 /* AppDelegateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		79B2F37225D71C1D008FA434 /* Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multithreading.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B2F37525D71C1D008FA434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateGCD.swift; sourceTree = "<group>"; };
 		79B2F37725D71C1D008FA434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		79B2F37E25D71C1E008FA434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B2F38125D71C1E008FA434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79B2F38325D71C1E008FA434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B2F39E25D71EB1008FA434 /* GCD-Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCD-Multithreading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B2F39F25D71EB1008FA434 /* GCD-Multithreading-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GCD-Multithreading-Info.plist"; path = "/Users/ikefir/Desktop/Multithreading/Multithreading/Resources/GCD-Multithreading-Info.plist"; sourceTree = "<absolute>"; };
+		79B2F3AD25D71EC4008FA434 /* Operation-Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Operation-Multithreading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B2F3AE25D71EC4008FA434 /* Operation-Multithreading-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Operation-Multithreading-Info.plist"; path = "/Users/ikefir/Desktop/Multithreading/Multithreading/Resources/Operation-Multithreading-Info.plist"; sourceTree = "<absolute>"; };
+		79B2F3BE25D7223E008FA434 /* GCD-Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCD-Features.swift"; sourceTree = "<group>"; };
+		79B2F3C225D7225B008FA434 /* Operation-Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation-Features.swift"; sourceTree = "<group>"; };
+		79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		79B2F36F25D71C1D008FA434 /* Frameworks */ = {
+		79B2F39725D71EB1008FA434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B2F3A625D71EC4008FA434 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,7 +64,8 @@
 		79B2F37325D71C1D008FA434 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79B2F37225D71C1D008FA434 /* Multithreading.app */,
+				79B2F39E25D71EB1008FA434 /* GCD-Multithreading.app */,
+				79B2F3AD25D71EC4008FA434 /* Operation-Multithreading.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,8 +73,10 @@
 		79B2F37425D71C1D008FA434 /* Multithreading */ = {
 			isa = PBXGroup;
 			children = (
-				79B2F38E25D71C47008FA434 /* Resources */,
+				79B2F3D025D723D8008FA434 /* GCD */,
+				79B2F3D125D723E1008FA434 /* Operation */,
 				79B2F38C25D71C39008FA434 /* Application */,
+				79B2F38E25D71C47008FA434 /* Resources */,
 			);
 			path = Multithreading;
 			sourceTree = "<group>";
@@ -61,7 +84,6 @@
 		79B2F38C25D71C39008FA434 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				79B2F37525D71C1D008FA434 /* AppDelegate.swift */,
 				79B2F37725D71C1D008FA434 /* SceneDelegate.swift */,
 				79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */,
 			);
@@ -72,29 +94,65 @@
 			isa = PBXGroup;
 			children = (
 				79B2F37E25D71C1E008FA434 /* Assets.xcassets */,
-				79B2F38325D71C1E008FA434 /* Info.plist */,
+				79B2F39F25D71EB1008FA434 /* GCD-Multithreading-Info.plist */,
+				79B2F3AE25D71EC4008FA434 /* Operation-Multithreading-Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		79B2F3D025D723D8008FA434 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */,
+				79B2F3BE25D7223E008FA434 /* GCD-Features.swift */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		79B2F3D125D723E1008FA434 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */,
+				79B2F3C225D7225B008FA434 /* Operation-Features.swift */,
+			);
+			path = Operation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79B2F37125D71C1D008FA434 /* Multithreading */ = {
+		79B2F39325D71EB1008FA434 /* GCD-Multithreading */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79B2F38625D71C1E008FA434 /* Build configuration list for PBXNativeTarget "Multithreading" */;
+			buildConfigurationList = 79B2F39B25D71EB1008FA434 /* Build configuration list for PBXNativeTarget "GCD-Multithreading" */;
 			buildPhases = (
-				79B2F36E25D71C1D008FA434 /* Sources */,
-				79B2F36F25D71C1D008FA434 /* Frameworks */,
-				79B2F37025D71C1D008FA434 /* Resources */,
+				79B2F39425D71EB1008FA434 /* Sources */,
+				79B2F39725D71EB1008FA434 /* Frameworks */,
+				79B2F39825D71EB1008FA434 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Multithreading;
+			name = "GCD-Multithreading";
 			productName = Multithreading;
-			productReference = 79B2F37225D71C1D008FA434 /* Multithreading.app */;
+			productReference = 79B2F39E25D71EB1008FA434 /* GCD-Multithreading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79B2F3A225D71EC4008FA434 /* Operation-Multithreading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B2F3AA25D71EC4008FA434 /* Build configuration list for PBXNativeTarget "Operation-Multithreading" */;
+			buildPhases = (
+				79B2F3A325D71EC4008FA434 /* Sources */,
+				79B2F3A625D71EC4008FA434 /* Frameworks */,
+				79B2F3A725D71EC4008FA434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Operation-Multithreading";
+			productName = Multithreading;
+			productReference = 79B2F3AD25D71EC4008FA434 /* Operation-Multithreading.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,11 +163,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
-				TargetAttributes = {
-					79B2F37125D71C1D008FA434 = {
-						CreatedOnToolsVersion = 12.1;
-					};
-				};
 			};
 			buildConfigurationList = 79B2F36D25D71C1D008FA434 /* Build configuration list for PBXProject "Multithreading" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -124,30 +177,53 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79B2F37125D71C1D008FA434 /* Multithreading */,
+				79B2F39325D71EB1008FA434 /* GCD-Multithreading */,
+				79B2F3A225D71EC4008FA434 /* Operation-Multithreading */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		79B2F37025D71C1D008FA434 /* Resources */ = {
+		79B2F39825D71EB1008FA434 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B2F38225D71C1E008FA434 /* LaunchScreen.storyboard in Resources */,
-				79B2F37F25D71C1E008FA434 /* Assets.xcassets in Resources */,
+				79B2F39925D71EB1008FA434 /* LaunchScreen.storyboard in Resources */,
+				79B2F3B425D71F22008FA434 /* GCD-Multithreading-Info.plist in Resources */,
+				79B2F39A25D71EB1008FA434 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B2F3A725D71EC4008FA434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B2F3A825D71EC4008FA434 /* LaunchScreen.storyboard in Resources */,
+				79B2F3A925D71EC4008FA434 /* Assets.xcassets in Resources */,
+				79B2F3B525D71F25008FA434 /* Operation-Multithreading-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		79B2F36E25D71C1D008FA434 /* Sources */ = {
+		79B2F39425D71EB1008FA434 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B2F37625D71C1D008FA434 /* AppDelegate.swift in Sources */,
-				79B2F37825D71C1D008FA434 /* SceneDelegate.swift in Sources */,
+				79B2F39525D71EB1008FA434 /* AppDelegateGCD.swift in Sources */,
+				79B2F39625D71EB1008FA434 /* SceneDelegate.swift in Sources */,
+				79B2F3BF25D7223F008FA434 /* GCD-Features.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B2F3A325D71EC4008FA434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B2F3CB25D72363008FA434 /* AppDelegateOperation.swift in Sources */,
+				79B2F3C325D7225B008FA434 /* Operation-Features.swift in Sources */,
+				79B2F3A525D71EC4008FA434 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +357,14 @@
 			};
 			name = Release;
 		};
-		79B2F38725D71C1E008FA434 /* Debug */ = {
+		79B2F39C25D71EB1008FA434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C23K8VGFDE;
-				INFOPLIST_FILE = Multithreading/Resources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Multithreading/Resources/GCD-Multithreading-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,14 +376,52 @@
 			};
 			name = Debug;
 		};
-		79B2F38825D71C1E008FA434 /* Release */ = {
+		79B2F39D25D71EB1008FA434 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C23K8VGFDE;
-				INFOPLIST_FILE = Multithreading/Resources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Multithreading/Resources/GCD-Multithreading-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kefir.Multithreading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79B2F3AB25D71EC4008FA434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C23K8VGFDE;
+				INFOPLIST_FILE = "$(SRCROOT)/Multithreading/Resources/Operation-Multithreading-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kefir.Multithreading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79B2F3AC25D71EC4008FA434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C23K8VGFDE;
+				INFOPLIST_FILE = "$(SRCROOT)/Multithreading/Resources/Operation-Multithreading-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,11 +445,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79B2F38625D71C1E008FA434 /* Build configuration list for PBXNativeTarget "Multithreading" */ = {
+		79B2F39B25D71EB1008FA434 /* Build configuration list for PBXNativeTarget "GCD-Multithreading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79B2F38725D71C1E008FA434 /* Debug */,
-				79B2F38825D71C1E008FA434 /* Release */,
+				79B2F39C25D71EB1008FA434 /* Debug */,
+				79B2F39D25D71EB1008FA434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B2F3AA25D71EC4008FA434 /* Build configuration list for PBXNativeTarget "Operation-Multithreading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B2F3AB25D71EC4008FA434 /* Debug */,
+				79B2F3AC25D71EC4008FA434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
