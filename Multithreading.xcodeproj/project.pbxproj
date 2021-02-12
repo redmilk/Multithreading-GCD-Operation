@@ -14,8 +14,6 @@
 		79B2F3A525D71EC4008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
 		79B2F3A825D71EC4008FA434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */; };
 		79B2F3A925D71EC4008FA434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F37E25D71C1E008FA434 /* Assets.xcassets */; };
-		79B2F3B425D71F22008FA434 /* GCD-Multithreading-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F39F25D71EB1008FA434 /* GCD-Multithreading-Info.plist */; };
-		79B2F3B525D71F25008FA434 /* Operation-Multithreading-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F3AE25D71EC4008FA434 /* Operation-Multithreading-Info.plist */; };
 		79B2F3BF25D7223F008FA434 /* GCD-Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3BE25D7223E008FA434 /* GCD-Features.swift */; };
 		79B2F3C325D7225B008FA434 /* Operation-Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3C225D7225B008FA434 /* Operation-Features.swift */; };
 		79B2F3CB25D72363008FA434 /* AppDelegateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */; };
@@ -27,9 +25,7 @@
 		79B2F37E25D71C1E008FA434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B2F38125D71C1E008FA434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B2F39E25D71EB1008FA434 /* GCD-Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCD-Multithreading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B2F39F25D71EB1008FA434 /* GCD-Multithreading-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GCD-Multithreading-Info.plist"; path = "/Users/ikefir/Desktop/Multithreading/Multithreading/Resources/GCD-Multithreading-Info.plist"; sourceTree = "<absolute>"; };
 		79B2F3AD25D71EC4008FA434 /* Operation-Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Operation-Multithreading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B2F3AE25D71EC4008FA434 /* Operation-Multithreading-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Operation-Multithreading-Info.plist"; path = "/Users/ikefir/Desktop/Multithreading/Multithreading/Resources/Operation-Multithreading-Info.plist"; sourceTree = "<absolute>"; };
 		79B2F3BE25D7223E008FA434 /* GCD-Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCD-Features.swift"; sourceTree = "<group>"; };
 		79B2F3C225D7225B008FA434 /* Operation-Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation-Features.swift"; sourceTree = "<group>"; };
 		79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateOperation.swift; sourceTree = "<group>"; };
@@ -94,8 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				79B2F37E25D71C1E008FA434 /* Assets.xcassets */,
-				79B2F39F25D71EB1008FA434 /* GCD-Multithreading-Info.plist */,
-				79B2F3AE25D71EC4008FA434 /* Operation-Multithreading-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,7 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79B2F39925D71EB1008FA434 /* LaunchScreen.storyboard in Resources */,
-				79B2F3B425D71F22008FA434 /* GCD-Multithreading-Info.plist in Resources */,
 				79B2F39A25D71EB1008FA434 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +193,6 @@
 			files = (
 				79B2F3A825D71EC4008FA434 /* LaunchScreen.storyboard in Resources */,
 				79B2F3A925D71EC4008FA434 /* Assets.xcassets in Resources */,
-				79B2F3B525D71F25008FA434 /* Operation-Multithreading-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
