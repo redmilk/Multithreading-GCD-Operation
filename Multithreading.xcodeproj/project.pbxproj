@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		79B2F37625D71C1D008FA434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37525D71C1D008FA434 /* AppDelegate.swift */; };
 		79B2F37825D71C1D008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
-		79B2F37A25D71C1D008FA434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37925D71C1D008FA434 /* ViewController.swift */; };
-		79B2F37D25D71C1D008FA434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F37B25D71C1D008FA434 /* Main.storyboard */; };
 		79B2F37F25D71C1E008FA434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F37E25D71C1E008FA434 /* Assets.xcassets */; };
 		79B2F38225D71C1E008FA434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		79B2F37225D71C1D008FA434 /* Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multithreading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B2F37525D71C1D008FA434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79B2F37725D71C1D008FA434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79B2F37925D71C1D008FA434 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79B2F37C25D71C1D008FA434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79B2F37E25D71C1E008FA434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B2F38125D71C1E008FA434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B2F38325D71C1E008FA434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,29 @@
 		79B2F37425D71C1D008FA434 /* Multithreading */ = {
 			isa = PBXGroup;
 			children = (
-				79B2F37525D71C1D008FA434 /* AppDelegate.swift */,
-				79B2F37725D71C1D008FA434 /* SceneDelegate.swift */,
-				79B2F37925D71C1D008FA434 /* ViewController.swift */,
-				79B2F37B25D71C1D008FA434 /* Main.storyboard */,
-				79B2F37E25D71C1E008FA434 /* Assets.xcassets */,
-				79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */,
-				79B2F38325D71C1E008FA434 /* Info.plist */,
+				79B2F38E25D71C47008FA434 /* Resources */,
+				79B2F38C25D71C39008FA434 /* Application */,
 			);
 			path = Multithreading;
+			sourceTree = "<group>";
+		};
+		79B2F38C25D71C39008FA434 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				79B2F37525D71C1D008FA434 /* AppDelegate.swift */,
+				79B2F37725D71C1D008FA434 /* SceneDelegate.swift */,
+				79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		79B2F38E25D71C47008FA434 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79B2F37E25D71C1E008FA434 /* Assets.xcassets */,
+				79B2F38325D71C1E008FA434 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +136,6 @@
 			files = (
 				79B2F38225D71C1E008FA434 /* LaunchScreen.storyboard in Resources */,
 				79B2F37F25D71C1E008FA434 /* Assets.xcassets in Resources */,
-				79B2F37D25D71C1D008FA434 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +146,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B2F37A25D71C1D008FA434 /* ViewController.swift in Sources */,
 				79B2F37625D71C1D008FA434 /* AppDelegate.swift in Sources */,
 				79B2F37825D71C1D008FA434 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +154,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79B2F37B25D71C1D008FA434 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79B2F37C25D71C1D008FA434 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +288,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C23K8VGFDE;
-				INFOPLIST_FILE = Multithreading/Info.plist;
+				INFOPLIST_FILE = Multithreading/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C23K8VGFDE;
-				INFOPLIST_FILE = Multithreading/Info.plist;
+				INFOPLIST_FILE = Multithreading/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
