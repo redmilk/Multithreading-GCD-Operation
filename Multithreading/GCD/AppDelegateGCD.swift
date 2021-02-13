@@ -15,11 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let serialQueue = SerialDispatchQueueExample()
 //        serialQueue.execute(example: .asyncAndSyncCallsSomeWithSleepInside)
         
-        let concurrentQueue = ConcurrentDispatchQueueExample()
-        concurrentQueue.execute(example: .asyncSettingSharedValue)
+//        let concurrentQueue = ConcurrentDispatchQueueExample()
+//        concurrentQueue.execute(example: .asyncSettingSharedValue)
         
-              
-        fatalError("Set a breakpoint before this call")
+        
+        let workItems = DispatchWorkItems()
+        workItems.execute(example: .all)
+        
+        
+        
+
+        fatalError()
     }
 }
 
