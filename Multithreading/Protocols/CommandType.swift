@@ -8,5 +8,6 @@
 import Foundation
 
 protocol CommandType {
-    func execute()
+    associatedtype Example
+    func execute(example: Example)
 }

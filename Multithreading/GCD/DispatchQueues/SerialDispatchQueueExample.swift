@@ -19,25 +19,36 @@ import Foundation
 
 
 struct SerialDispatchQueueExample: CommandType {
-    
-    func execute() {
-        Utils.printManiac(value: "⚙️", amount: 50)
-        print()
-        print()
-        print()
 
-        example0()
-        example1()
-        example2()
-        example3()
-        example4()
+    enum Example {
+        case asyncAndSyncCallsSomeWithAfterDeadline
+        case asyncAndSyncCallsSomeWithSleepInside
+        case syncAndAsyncPairPrints
+        case asyncAndAsyncPairPrints
+        case syncAndSyncPairPrints
+        case asyncAndOutsidePairPrints
+    }
+    
+    func execute(example: Example) {
+        switch example {
+        case .asyncAndSyncCallsSomeWithAfterDeadline: example0()
+        case .asyncAndSyncCallsSomeWithSleepInside: example1()
+        case .syncAndAsyncPairPrints: example2()
+        case .asyncAndAsyncPairPrints: example3()
+        case .syncAndSyncPairPrints: example4()
+        case .asyncAndOutsidePairPrints:
+            example5()
+            example5()
+            example5()
+        }
     }
     
     private func example0() {
         print()
         Utils.printManiac(value: "🏁", amount: 10)
         print()
-        print("Different ASYNC and SYNC calls of numbers print, some of ASYNC with after deadline")
+        print("SERIAL QUEUE: Different ASYNC and SYNC calls of numbers print, some of ASYNC with after deadline")
+        print("Separator is outside of serial queue, after deadline: '1'+ 2s, '4'+ 5s")
         print()
         let serialQueue = DispatchQueue(label: "MySerialQueue")
         
@@ -76,10 +87,11 @@ struct SerialDispatchQueueExample: CommandType {
         }
         Utils.printSeparator()
         
-        sleep(6)
+        sleep(10)
         print()
-        Utils.printManiac(value: "❕", amount: 50)
+        Utils.printManiac(value: "🔳", amount: 50)
         print()
+        print("Separator is inside serial queue, after deadline: '1'+ 2s, '4'+ 5s")
         print()
         
         serialQueue.sync {
@@ -116,16 +128,19 @@ struct SerialDispatchQueueExample: CommandType {
             Utils.printManiac(value: "6", amount: 100)
             Utils.printSeparator()
         }
-        
+        sleep(10)
     }
     
     private func example1() {
+        print()
+        print()
         Utils.printManiac(value: "⚙️", amount: 50)
         print()
         Utils.printManiac(value: "🏁", amount: 10)
         print()
-        print("Different ASYNC and SYNC calls of numbers print, some of them with sleep inside")
+        print("SERIAL QUEUE: Different ASYNC and SYNC calls of numbers print, some of them with sleep inside")
         print()
+        
         let serialQueue = DispatchQueue(label: "MySerialQueue")
         
         serialQueue.sync {
@@ -167,8 +182,9 @@ struct SerialDispatchQueueExample: CommandType {
         
         sleep(6)
         print()
-        Utils.printManiac(value: "❕", amount: 50)
+        Utils.printManiac(value: "🔳", amount: 50)
         print()
+        print("Separator is inside serial queue, sleep: '1'+ 2s, '4'+ 5s")
         print()
         
         serialQueue.sync {
@@ -215,7 +231,7 @@ struct SerialDispatchQueueExample: CommandType {
         print()
         Utils.printManiac(value: "🏁", amount: 10)
         print()
-        print("100 executions of pair print by sync and SYNC + ASYNC")
+        print("SERIAL QUEUE: 1 000 executions of pair print by sync and SYNC[⬜️] + ASYNC[⬛️]")
         print()
         
         let serialQueue = DispatchQueue(label: "SerialQueueExample")
@@ -234,7 +250,7 @@ struct SerialDispatchQueueExample: CommandType {
         print()
         Utils.printManiac(value: "🏁", amount: 10)
         print()
-        print("100 executions of pair print by ASYNC + ASYNC ")
+        print("SERIAL QUEUE: 1 000 executions of pair print by ASYNC[⬜️] + ASYNC[⬛️] ")
         print()
         
         let serialQueue = DispatchQueue(label: "SerialQueueExample")
@@ -253,7 +269,7 @@ struct SerialDispatchQueueExample: CommandType {
         print()
         Utils.printManiac(value: "🏁", amount: 10)
         print()
-        print("10 000 executions of pair print by SYNC + SYNC")
+        print("SERIAL QUEUE: 1 000 executions of pair print by SYNC[⬜️] + SYNC[⬛️]")
         print()
         
         let serialQueue = DispatchQueue(label: "SerialQueueExample")
@@ -265,5 +281,24 @@ struct SerialDispatchQueueExample: CommandType {
                 Utils.printManiac(value: "⬛️", amount: 1)
             }
         }
+    }
+    
+    private func example5() {
+        sleep(2)
+        print()
+        Utils.printManiac(value: "🏁", amount: 10)
+        print()
+        print("SERIAL QUEUE: 1 000 executions of pair print by ASYNC[⬜️] + Outside[⬛️]")
+        print()
+        
+        let serialQueue = DispatchQueue(label: "SerialQueueExample")
+        for _ in 0...1_000 {
+            serialQueue.async {
+                Utils.printManiac(value: "⬜️", amount: 1)
+            }
+            Utils.printManiac(value: "⬛️", amount: 1)
+        }
+        
+        sleep(10)
     }
 }
