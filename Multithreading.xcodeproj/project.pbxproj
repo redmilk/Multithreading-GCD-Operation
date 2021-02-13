@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7931A28325D73C8400C6291A /* ConcurrentDispatchQueueExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931A28225D73C8400C6291A /* ConcurrentDispatchQueueExample.swift */; };
 		79B2F39525D71EB1008FA434 /* AppDelegateGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */; };
 		79B2F39625D71EB1008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
 		79B2F39925D71EB1008FA434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */; };
@@ -14,21 +15,28 @@
 		79B2F3A525D71EC4008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
 		79B2F3A825D71EC4008FA434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F38025D71C1E008FA434 /* LaunchScreen.storyboard */; };
 		79B2F3A925D71EC4008FA434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B2F37E25D71C1E008FA434 /* Assets.xcassets */; };
-		79B2F3BF25D7223F008FA434 /* GCD-Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3BE25D7223E008FA434 /* GCD-Features.swift */; };
+		79B2F3BF25D7223F008FA434 /* SerialDispatchQueueExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3BE25D7223E008FA434 /* SerialDispatchQueueExample.swift */; };
 		79B2F3C325D7225B008FA434 /* Operation-Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3C225D7225B008FA434 /* Operation-Features.swift */; };
 		79B2F3CB25D72363008FA434 /* AppDelegateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */; };
+		79B2F3DC25D72797008FA434 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3DB25D72797008FA434 /* Utils.swift */; };
+		79B2F3DD25D72797008FA434 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3DB25D72797008FA434 /* Utils.swift */; };
+		79B2F3E325D72AC1008FA434 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3E225D72AC1008FA434 /* CommandType.swift */; };
+		79B2F3E425D72AC1008FA434 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3E225D72AC1008FA434 /* CommandType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7931A28225D73C8400C6291A /* ConcurrentDispatchQueueExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentDispatchQueueExample.swift; sourceTree = "<group>"; };
 		79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateGCD.swift; sourceTree = "<group>"; };
 		79B2F37725D71C1D008FA434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		79B2F37E25D71C1E008FA434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B2F38125D71C1E008FA434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B2F39E25D71EB1008FA434 /* GCD-Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCD-Multithreading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B2F3AD25D71EC4008FA434 /* Operation-Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Operation-Multithreading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B2F3BE25D7223E008FA434 /* GCD-Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCD-Features.swift"; sourceTree = "<group>"; };
+		79B2F3BE25D7223E008FA434 /* SerialDispatchQueueExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatchQueueExample.swift; sourceTree = "<group>"; };
 		79B2F3C225D7225B008FA434 /* Operation-Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation-Features.swift"; sourceTree = "<group>"; };
 		79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateOperation.swift; sourceTree = "<group>"; };
+		79B2F3DB25D72797008FA434 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		79B2F3E225D72AC1008FA434 /* CommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 			children = (
 				79B2F3D025D723D8008FA434 /* GCD */,
 				79B2F3D125D723E1008FA434 /* Operation */,
+				79B2F3E125D72AAD008FA434 /* Protocols */,
+				79B2F3DA25D72786008FA434 /* Utils */,
 				79B2F38C25D71C39008FA434 /* Application */,
 				79B2F38E25D71C47008FA434 /* Resources */,
 			);
@@ -97,8 +107,8 @@
 		79B2F3D025D723D8008FA434 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
+				79B2F3E025D72A53008FA434 /* DispatchQueues */,
 				79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */,
-				79B2F3BE25D7223E008FA434 /* GCD-Features.swift */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -110,6 +120,31 @@
 				79B2F3C225D7225B008FA434 /* Operation-Features.swift */,
 			);
 			path = Operation;
+			sourceTree = "<group>";
+		};
+		79B2F3DA25D72786008FA434 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79B2F3DB25D72797008FA434 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		79B2F3E025D72A53008FA434 /* DispatchQueues */ = {
+			isa = PBXGroup;
+			children = (
+				79B2F3BE25D7223E008FA434 /* SerialDispatchQueueExample.swift */,
+				7931A28225D73C8400C6291A /* ConcurrentDispatchQueueExample.swift */,
+			);
+			path = DispatchQueues;
+			sourceTree = "<group>";
+		};
+		79B2F3E125D72AAD008FA434 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				79B2F3E225D72AC1008FA434 /* CommandType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +240,10 @@
 			files = (
 				79B2F39525D71EB1008FA434 /* AppDelegateGCD.swift in Sources */,
 				79B2F39625D71EB1008FA434 /* SceneDelegate.swift in Sources */,
-				79B2F3BF25D7223F008FA434 /* GCD-Features.swift in Sources */,
+				79B2F3BF25D7223F008FA434 /* SerialDispatchQueueExample.swift in Sources */,
+				79B2F3E325D72AC1008FA434 /* CommandType.swift in Sources */,
+				79B2F3DC25D72797008FA434 /* Utils.swift in Sources */,
+				7931A28325D73C8400C6291A /* ConcurrentDispatchQueueExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +254,8 @@
 				79B2F3CB25D72363008FA434 /* AppDelegateOperation.swift in Sources */,
 				79B2F3C325D7225B008FA434 /* Operation-Features.swift in Sources */,
 				79B2F3A525D71EC4008FA434 /* SceneDelegate.swift in Sources */,
+				79B2F3E425D72AC1008FA434 /* CommandType.swift in Sources */,
+				79B2F3DD25D72797008FA434 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
