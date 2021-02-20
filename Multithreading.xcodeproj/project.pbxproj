@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7901456225D8504900F90AF2 /* DispatchWorkItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901456125D8504900F90AF2 /* DispatchWorkItems.swift */; };
+		7901456B25D85D0800F90AF2 /* DispatchSemaphoreExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901456A25D85D0800F90AF2 /* DispatchSemaphoreExample.swift */; };
 		7931A28325D73C8400C6291A /* ConcurrentDispatchQueueExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931A28225D73C8400C6291A /* ConcurrentDispatchQueueExample.swift */; };
 		79B2F39525D71EB1008FA434 /* AppDelegateGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */; };
 		79B2F39625D71EB1008FA434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F37725D71C1D008FA434 /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		7901456125D8504900F90AF2 /* DispatchWorkItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItems.swift; sourceTree = "<group>"; };
+		7901456A25D85D0800F90AF2 /* DispatchSemaphoreExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchSemaphoreExample.swift; sourceTree = "<group>"; };
 		7931A28225D73C8400C6291A /* ConcurrentDispatchQueueExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentDispatchQueueExample.swift; sourceTree = "<group>"; };
 		79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateGCD.swift; sourceTree = "<group>"; };
 		79B2F37725D71C1D008FA434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 				7901456125D8504900F90AF2 /* DispatchWorkItems.swift */,
 			);
 			path = DispatchWorkItem;
+			sourceTree = "<group>";
+		};
+		7901456925D85CE900F90AF2 /* DispatchSemaphore */ = {
+			isa = PBXGroup;
+			children = (
+				7901456A25D85D0800F90AF2 /* DispatchSemaphoreExample.swift */,
+			);
+			path = DispatchSemaphore;
 			sourceTree = "<group>";
 		};
 		79B2F36925D71C1D008FA434 = {
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */,
+				7901456925D85CE900F90AF2 /* DispatchSemaphore */,
 				7901456025D8503300F90AF2 /* DispatchWorkItem */,
 				79B2F3E025D72A53008FA434 /* DispatchQueues */,
 			);
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7901456225D8504900F90AF2 /* DispatchWorkItems.swift in Sources */,
+				7901456B25D85D0800F90AF2 /* DispatchSemaphoreExample.swift in Sources */,
 				79B2F39525D71EB1008FA434 /* AppDelegateGCD.swift in Sources */,
 				79B2F39625D71EB1008FA434 /* SceneDelegate.swift in Sources */,
 				79B2F3BF25D7223F008FA434 /* SerialDispatchQueueExample.swift in Sources */,

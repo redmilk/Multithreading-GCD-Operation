@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let concurrentQueue = ConcurrentDispatchQueueExample()
 //        concurrentQueue.execute(example: .asyncSettingSharedValue)
         
+//        let workItems = DispatchWorkItems()
+//        workItems.execute(example: .all)
         
-        let workItems = DispatchWorkItems()
-        workItems.execute(example: .all)
-        
-        
+        let semaphores = DispatchSemaphoreExample()
+        semaphores.execute(example: .three)
         
 
         fatalError()
