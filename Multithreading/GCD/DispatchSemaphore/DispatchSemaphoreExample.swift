@@ -10,18 +10,20 @@ import Foundation
 struct DispatchSemaphoreExample: CommandType {
     
     enum Example {
-        case one
-        case two
-        case three
+        case example0
+        case example1
+        case example2
+        case example3
         case all
     }
     
     func execute(example: Example) {
         switch example {
-        case .one: example0()
-        case .two: example1()
-        case .three:
-            example2()
+        case .example0: example0()
+        case .example1: example1()
+        case .example2: example2()
+        case .example3: example3()
+            
         case .all:
             example0()
             example1()
@@ -99,6 +101,43 @@ struct DispatchSemaphoreExample: CommandType {
         
         sleep(5)
         print("\n\n\n\n")
+    }
+    
+    private func example3() {
+        print("👁‍🗨👁‍🗨👁‍🗨👁‍🗨👁‍🗨👁‍🗨 Failed attempt Semaphore like DispatchGroup behaviour, in semaphore init we provide value 3 for describing how many operation we be made concurrently \n")
+        
+        let semaphore3 = DispatchSemaphore(value: 3)
+        
+        semaphore3.wait()
+        DispatchQueue.global().async {
+            sleep(3)
+            Utils.printManiac(value: "🟩", amount: 5)
+            print("\n")
+            semaphore3.signal()
+        }
+        
+        semaphore3.wait()
+        DispatchQueue.global().async {
+            sleep(2)
+            Utils.printManiac(value: "🟫", amount: 5)
+            print("\n")
+            semaphore3.signal()
+        }
+        
+        semaphore3.wait()
+        DispatchQueue.global().async {
+            sleep(1)
+            Utils.printManiac(value: "🟦", amount: 5)
+            print("\n")
+            semaphore3.signal()
+        }
+        
+        semaphore3.wait()
+
+        Utils.printManiac(value: "⬜️", amount: 100)
+        
+        sleep(4)
+                        
     }
     
   

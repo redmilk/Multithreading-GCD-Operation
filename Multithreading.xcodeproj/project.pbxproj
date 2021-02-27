@@ -24,6 +24,7 @@
 		79B2F3DD25D72797008FA434 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3DB25D72797008FA434 /* Utils.swift */; };
 		79B2F3E325D72AC1008FA434 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3E225D72AC1008FA434 /* CommandType.swift */; };
 		79B2F3E425D72AC1008FA434 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2F3E225D72AC1008FA434 /* CommandType.swift */; };
+		79D47B3525EA557300D82A28 /* DispatchGroupExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D47B3425EA557300D82A28 /* DispatchGroupExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		79B2F3CA25D72363008FA434 /* AppDelegateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateOperation.swift; sourceTree = "<group>"; };
 		79B2F3DB25D72797008FA434 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		79B2F3E225D72AC1008FA434 /* CommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandType.swift; sourceTree = "<group>"; };
+		79D47B3425EA557300D82A28 /* DispatchGroupExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				79B2F37525D71C1D008FA434 /* AppDelegateGCD.swift */,
+				79D47B3325EA555F00D82A28 /* DispatchGroup */,
 				7901456925D85CE900F90AF2 /* DispatchSemaphore */,
 				7901456025D8503300F90AF2 /* DispatchWorkItem */,
 				79B2F3E025D72A53008FA434 /* DispatchQueues */,
@@ -167,6 +170,14 @@
 				79B2F3E225D72AC1008FA434 /* CommandType.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		79D47B3325EA555F00D82A28 /* DispatchGroup */ = {
+			isa = PBXGroup;
+			children = (
+				79D47B3425EA557300D82A28 /* DispatchGroupExample.swift */,
+			);
+			path = DispatchGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D47B3525EA557300D82A28 /* DispatchGroupExample.swift in Sources */,
 				7901456225D8504900F90AF2 /* DispatchWorkItems.swift in Sources */,
 				7901456B25D85D0800F90AF2 /* DispatchSemaphoreExample.swift in Sources */,
 				79B2F39525D71EB1008FA434 /* AppDelegateGCD.swift in Sources */,

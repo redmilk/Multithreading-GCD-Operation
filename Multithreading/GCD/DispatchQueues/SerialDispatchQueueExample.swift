@@ -27,6 +27,7 @@ struct SerialDispatchQueueExample: CommandType {
         case asyncAndAsyncPairPrints
         case syncAndSyncPairPrints
         case asyncAndOutsidePairPrints
+        case example6
     }
     
     func execute(example: Example) {
@@ -34,12 +35,24 @@ struct SerialDispatchQueueExample: CommandType {
         case .asyncAndSyncCallsSomeWithAfterDeadline: example0()
         case .asyncAndSyncCallsSomeWithSleepInside: example1()
         case .syncAndAsyncPairPrints: example2()
-        case .asyncAndAsyncPairPrints: example3()
+        case .asyncAndAsyncPairPrints:
+            example3()
+            example3()
+            example3()
+            example3()
+            example3()
+            example3()
+
         case .syncAndSyncPairPrints: example4()
         case .asyncAndOutsidePairPrints:
             example5()
             example5()
             example5()
+        case .example6:
+            example6()
+            example6()
+            example6()
+            example6()
         }
     }
     
@@ -300,5 +313,26 @@ struct SerialDispatchQueueExample: CommandType {
         }
         
         sleep(10)
+    }
+    
+    private func example6() {
+        sleep(3)
+        print("Simulating network request")
+
+        let serialQueue = DispatchQueue(label: "SerialQueue")
+        
+        serialQueue.async {
+            DispatchQueue.global().async {
+                sleep(2)
+                Utils.printManiac(value: "⬜️", amount: 10)
+            }
+        }
+        
+        serialQueue.async {
+            DispatchQueue.global().async {
+                Utils.printManiac(value: "⬛️", amount: 10)
+            }
+        }
+        
     }
 }

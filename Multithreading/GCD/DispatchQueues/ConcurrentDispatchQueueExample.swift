@@ -303,7 +303,56 @@ class ConcurrentDispatchQueueExample: CommandType {
     }
     
     private func example7() {
+        print()
+        Utils.printManiac(value: "🏁", amount: 10)
+        print()
+        print("CONCURRENT QUEUE: Different ASYNC and SYNC calls of numbers print, some of them with sleep inside")
+        print()
         
+        let concurrentQueue = DispatchQueue(label: "MyConcurrentQueue", attributes: .concurrent)
+        
+        concurrentQueue.sync {
+            Utils.printManiac(value: "0", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        concurrentQueue.sync {
+            sleep(2)
+            Utils.printManiac(value: "+1", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        concurrentQueue.async {
+            Utils.printManiac(value: "2", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        concurrentQueue.sync {
+            Utils.printManiac(value: "3", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        concurrentQueue.async {
+            Utils.printManiac(value: "+4", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        concurrentQueue.sync {
+            Utils.printManiac(value: "5", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        concurrentQueue.sync {
+            Utils.printManiac(value: "6", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        concurrentQueue.sync {
+            Utils.printManiac(value: "7", amount: 100)
+            Utils.printSeparator()
+        }
+        
+        sleep(10)
     }
 }
 
